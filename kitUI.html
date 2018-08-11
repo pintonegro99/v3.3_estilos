@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>estilos, guia de estilos web para a FCT</title>
+  <link rel="stylesheet" href="css/estilos.themeFCT.css">
+  <link rel="stylesheet" href="dist/base.spectre.css">
+  <link rel="stylesheet" href="css/estilos.guia.css">
+  <link rel="stylesheet" href="css/estilos.themeFCT.icones.css">
+  <link rel="stylesheet" href="dist/spectre.icones.css">
+</head>
+<body>
+  <div class="docs-container off-canvas">
+    <div class="docs-navbar">
+      <a class="off-canvas-toggle btn btn-link btn-action" href="#sidebar">
+        <i class="icon icon-menu"></i>
+      </a>
+      <a href="docs/v03_UI_review_estilos.pdf" title="Desenho das soluções UI, proposta visual em PDF, 1.2MB" target="_blank" class="btn btn-primary">Soluções UI, desenho</a>
+    </div>
+
+
+    <div id="sidebar" class="docs-sidebar off-canvas-sidebar">
+      <div class="docs-brand">
+        <a href="estrutura.html" class="docs-logo">
+          <img src="img/logoestilos_black.svg" alt="estilos.CSS Framework">
+          <h2>estilos</h2>
+        </a>
+      </div>
+
+      <div class="docs-nav">
+       <p class="descricao_versao">KIT UI • <small class="opacity">Versão 3.3</small></p>
+        <div class="accordion-container">
+          <div class="accordion">
+            <input type="checkbox" id="docs-accordion-1" name="docs-accordion-checkbox" hidden checked>
+            <label class="accordion-header c-hand" for="docs-accordion-1">
+              componentes
+            </label>
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                 <li class="menu-item">
+                    <a href=""><small class="opacity">01.</small> Alertas</a>
+                 </li>
+                 <li class="menu-item">
+                    <a href=""><small class="opacity">02.</small> Acordião</a>
+                 </li>
+                 <li class="menu-item">
+                    <a href="#breadcrumbs"><small class="opacity">03.</small> Breadcrumbs</a>
+                 </li> 
+                 <li class="menu-item">
+                    <a href=""><small class="opacity">04.</small> Cards</a>
+                  </li> 
+                 <li class="menu-item">
+                    <a href=""><small class="opacity">05.</small> File upload</a>
+                 </li>
+                 <li class="menu-item">
+                    <a href=""><small class="opacity">06.</small> Janelas modais</a>
+                 </li>                                  
+                 <li class="menu-item">
+                    <a href=""><small class="opacity">07.</small> Menu dropdown</a>
+                 </li>                
+                 <li class="menu-item">
+                    <a href=""><small class="opacity">08.</small> Paineis</a>
+                  </li> 
+                 <li class="menu-item">
+                    <a href=""><small class="opacity">09.</small> Paginação</a>
+                  </li>                                                                                                   
+                 <li class="menu-item">
+                    <a href=""><small class="opacity">10.</small> Popovers</a>
+                  </li>  
+                 <li class="menu-item">
+                    <a href=""><small class="opacity">11.</small> Passos</a>
+                  </li>
+                 <li class="menu-item">
+                    <a href=""><small class="opacity">12.</small> Tabs</a>
+                  </li> 
+                 <li class="menu-item">
+                    <a href="#tooltips"><small class="opacity">13.</small> Tooltips</a>
+                 </li> 
+              </ul>
+            </div>
+          </div>
+          <div class="accordion">
+            <input type="checkbox" id="docs-accordion-2" name="docs-accordion-checkbox" hidden checked>
+            <label class="accordion-header c-hand" for="docs-accordion-2">
+              mais elementos
+            </label>
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                <li class="menu-item">
+                  <a href="#formularios"><small class="opacity">01.</small> Elementos básicos</a>
+                </li>              
+                <li class="menu-item">
+                  <a href="#formularios"><small class="opacity">02.</small> Formulários; os tipos</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#tabelas"><small class="opacity">03.</small> Tabelas; os modelos</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#tabelas"><small class="opacity">04.</small> Labels</a>
+                </li>                
+                <li class="menu-item">
+                  <a href="#tabelas"><small class="opacity">05.</small> Media</a>
+                </li>                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+
+
+
+
+
+
+  <a class="off-canvas-overlay" href="#close"></a>
+  <div id="content" class="docs-content off-canvas-content">
+
+
+
+<!-- ALERTAS  -->
+<div class="container" id="toasts">
+            <h3 class="s-title">Alertas<a class="anchor" href="#toasts" aria-hidden="true">#</a></h3>
+            <p>Existem 4 tipos de alertas — sucesso, erro, aviso e informativo. As situações em que devem ser utilizados estão tipicamente relacionados com a necessidade de informar o utilizador com feedback do sistema.</p>
+            <div class="docs-demo columns">
+              <div class="column col-9 col-sm-12">
+                <div class="toast">
+                  <button class="btn btn-clear float-right"></button>
+                  <h6>Toast Title</h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
+              </div>
+              <div class="column col-9 col-sm-12">
+                <div class="toast toast-primary">
+                  <button class="btn btn-clear float-right"></button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
+              </div>
+            </div>
+            <p>Add a container element with the <code>toast</code> class.
+              You can add any text within the container, and even icons. 
+              You may also add a close button with the <code>btn-clear</code> class if you need.
+            </p>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"toast"</span>&gt;</span>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+            <div class="docs-demo columns">
+
+              <div class="column col-sm-12">
+                <div class="toast toast-warning">
+                  <button class="btn btn-clear float-right"></button>
+                  <i class="icone-aviso size_icotoast"></i>
+                  <h6 class="title-aviso">Aviso</h6>
+                  <p class="legenda-toast">Deixou algum campo com a informação incorreta</p>
+                </div>
+              </div>
+
+              <div class="column col-sm-12">
+                <div class="toast toast-success">
+                  <button class="btn btn-clear float-right"></button>Toast success
+                </div>
+              </div>
+
+              <div class="column col-sm-12">
+                <div class="toast toast-error">
+                  <button class="btn btn-clear float-right"></button>Toast error
+                </div>
+              </div>
+            </div>
+            <p>And you can add the <code>toast-primary</code>, <code>toast-success</code>, <code>toast-warning</code> or <code>toast-error</code> class for additional toast colors.</p>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"toast toast-primary"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-clear float-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+          </div>
+
+
+
+
+<!-- BREADCRUMBS  -->
+<div id="breadcrumbs" class="container">
+      <h3 class="s-title section-space"><a class="anchor" href="#breadcrumbs" aria-hidden="true">03.</a>Breadcrumbs</h3>
+      <p class="description">Os <strong>breadcrumbs são os "trilhos de migalhas"</strong> que são uma navegação secundária e auxiliar para os utilizadores terem uma localização exata na estrutura do website. Esta componente é utilizada nas aplicações ou sites que têm uma arquitetura da informação com vários níveis de hierarquia. Add a container element with the <code>breadcrumb</code> class. And add child elements with the <code>breadcrumb-item</code> class.
+      </p>
+      
+      <div class="description section-space ">
+       
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#breadcrumbs">Home</a></li>
+            <li class="breadcrumb-item"><a href="#breadcrumbs"> Avaliação de Unidades</a></li>
+            <li class="breadcrumb-item"><a href="#breadcrumbs"> Avaliação de Unidades de 2013</a></li>            
+            <li class="breadcrumb-item"><a class="tooltip" href="#breadcrumbs" data-tooltip="estou aqui..."> Confirmação na Equipa</a></li>
+          </ul>
+                     
+          <ul class="breadcrumb"></ul>
+
+      </div>   
+
+            <pre class="code" data-lang="HTML DO EXEMPLO"><code><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb-item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb-item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Avaliação de Unidades<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb-item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Avaliação de Unidades de 2013<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>  
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"breadcrumb-item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Confirmação na Equipa<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
+</div>
+
+
+<div class="container" id="modals">
+            <h3 class="s-title">Janelas modais<a class="anchor" href="#modals" aria-hidden="true">#</a></h3>
+            <p>Modals are flexible dialog prompts.</p>
+            <div class="docs-demo columns">
+              <div class="column"><a class="btn btn-primary" href="#example-modal-1">Open Modal</a>
+                <div class="modal" id="example-modal-1"><a class="modal-overlay" href="#modals" aria-label="Close"></a>
+                  <div class="modal-container" role="document">
+                    <div class="modal-header"><a class="btn btn-clear float-right" href="#modals" aria-label="Close"></a>
+                      <div class="modal-title h5">Modal title</div>
+                    </div>
+                    <div class="modal-body">
+                      <div class="content">
+                        <p>This is the content inside the modal.</p>
+                        <h4>Lorem ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.</p>
+                        <p>Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet but rub face on everything hopped up on goofballs.</p>
+                        <h4>Cupcake ipsum</h4>
+                        <p>Jelly-o sesame snaps halvah croissant oat cake cookie. Cheesecake bear claw topping. Chupa chups apple pie carrot cake chocolate cake caramels.</p>
+                        <p>De braaaiiiins apocalypsi gorger omero prefrontal cortex undead survivor fornix dictum mauris. Hi brains mindless mortuis limbic cortex soulless creaturas optic nerve.</p>
+                        <h4>Candy ipsum</h4>
+                        <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar.</p>
+                        <p>Caerphilly swiss fromage frais. Brie cheese and wine fromage frais chalk and cheese danish fontina smelly cheese who moved my cheese cow.</p>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary">Share</button><a class="btn btn-link" href="#modals">Close</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>Add a container element with the <code>modal</code> class.
+              And add a real container <code>modal-container</code> and overlay <code>modal-overlay</code> inside it.
+              You can add child elements with the <code>modal-header</code>, <code>modal-body</code> and <code>modal-footer</code> - any or all of them.
+            </p>
+            <p>
+              Spectre.css does not include JavaScript code, you will need to implement your JS to interact with modals.
+              To make a modal appear, add the <code>active</code> class to the <code>modal</code> container.
+            </p>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal active"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"modal-id"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#close"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-overlay"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Close"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-container"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-header"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#close"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-clear float-right"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Close"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-title h5"</span>&gt;</span>Modal title<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-body"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"content"</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- content here --&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-footer"</span>&gt;</span>
+      ...
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+            <h4 class="s-subtitle" id="modals-sizes">Modal sizes<a class="anchor" href="#modals-sizes" aria-hidden="true">#</a></h4>
+            <div class="docs-demo columns">
+              <div class="column col-6 col-xs-12"><a class="btn btn-primary" href="#example-modal-2">Open small size Modal</a>
+                <div class="modal modal-sm" id="example-modal-2"><a class="modal-overlay" href="#modals-sizes" aria-label="Close"></a>
+                  <div class="modal-container" role="document">
+                    <div class="modal-header"><a class="btn btn-clear float-right" href="#modals-sizes" aria-label="Close"></a>
+                      <div class="modal-title h5">Modal title</div>
+                    </div>
+                    <div class="modal-body">
+                      <div class="content">
+                        <form>
+                          <div class="form-group">
+                            <label class="form-label" for="input-example-7">Name</label>
+                            <input class="form-input" id="input-example-7" type="text" placeholder="Name">
+                          </div>
+                          <div class="form-group">
+                            <label class="form-label">Gender</label>
+                            <label class="form-radio">
+                              <input type="radio" name="gender"><i class="form-icon"></i> Male
+                            </label>
+                            <label class="form-radio">
+                              <input type="radio" name="gender" checked=""><i class="form-icon"></i> Female
+                            </label>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary">Submit</button><a class="btn btn-link" href="#modals-sizes" aria-label="Close">Close</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>Use the <code>modal-sm</code> class for a smaller modal dialog.
+              The container max width is <code>320px</code>.
+            </p>
+            <div class="docs-demo columns">
+              <div class="column"><a class="btn btn-primary" href="#example-modal-3">Open large size Modal</a>
+                <div class="modal modal-lg" id="example-modal-3"><a class="modal-overlay" href="#modals-sizes" aria-label="Close"></a>
+                  <div class="modal-container" role="document">
+                    <div class="modal-header"><a class="btn btn-clear float-right" href="#modals-sizes" aria-label="Close"></a>
+                      <div class="modal-title h5">Modal title</div>
+                    </div>
+                    <div class="modal-body">
+                      <div class="content">
+                        <p>This is the content inside the modal.</p>
+                        <h4>Lorem ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.</p>
+                        <p>Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet but rub face on everything hopped up on goofballs.</p>
+                        <h4>Cupcake ipsum</h4>
+                        <p>Jelly-o sesame snaps halvah croissant oat cake cookie. Cheesecake bear claw topping. Chupa chups apple pie carrot cake chocolate cake caramels.</p>
+                        <p>De braaaiiiins apocalypsi gorger omero prefrontal cortex undead survivor fornix dictum mauris. Hi brains mindless mortuis limbic cortex soulless creaturas optic nerve.</p>
+                        <h4>Candy ipsum</h4>
+                        <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar.</p>
+                        <p>Caerphilly swiss fromage frais. Brie cheese and wine fromage frais chalk and cheese danish fontina smelly cheese who moved my cheese cow.</p>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary">Share</button><a class="btn btn-link" href="#modals-sizes">Close</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>Use the <code>modal-lg</code> class for a full size modal.
+              The container max width is <code>960px</code>.
+            </p>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal modal-sm"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#close"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-overlay"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Close"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-container"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- modal structure here --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+          </div>
+
+
+<div class="container" id="popovers">
+            <h3 class="s-title">Popovers<a class="anchor" href="#popovers" aria-hidden="true">#</a></h3>
+            <p>Popovers are small overlay content containers. Popovers component is built entirely in CSS.</p>
+            <div class="docs-demo columns">
+              <div class="column col-3 col-sm-6">
+                <div class="popover"><a class="btn btn-primary" href="#popovers">top popover</a>
+                  <div class="popover-container">
+                    <div class="card">
+                      <div class="card-header">
+                        <div class="card-title h5">Apple</div>
+                        <div class="card-subtitle text-gray">Software and hardware</div>
+                      </div>
+                      <div class="card-body">To make a contribution to the world by making tools for the mind that advance humankind.</div>
+                      <div class="card-footer">
+                        <button class="btn btn-primary">Buy</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column col-3 col-sm-6">
+                <div class="popover popover-right"><a class="btn btn-primary" href="#popovers">right popover</a>
+                  <div class="popover-container">
+                    <div class="card">
+                      <div class="card-header">
+                        <div class="card-title h5">Apple</div>
+                        <div class="card-subtitle text-gray">Software and hardware</div>
+                      </div>
+                      <div class="card-body">To make a contribution to the world by making tools for the mind that advance humankind.</div>
+                      <div class="card-footer">
+                        <button class="btn btn-primary">Buy</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column col-3 col-sm-6">
+                <div class="popover popover-bottom"><a class="btn btn-primary" href="#popovers">bottom popover</a>
+                  <div class="popover-container">
+                    <div class="card">
+                      <div class="card-header">
+                        <div class="card-title h5">Apple</div>
+                        <div class="card-subtitle text-gray">Software and hardware</div>
+                      </div>
+                      <div class="card-body">To make a contribution to the world by making tools for the mind that advance humankind.</div>
+                      <div class="card-footer">
+                        <button class="btn btn-primary">Buy</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column col-3 col-sm-6">
+                <div class="popover popover-left"><a class="btn btn-primary" href="#popovers">left popover</a>
+                  <div class="popover-container">
+                    <div class="card">
+                      <div class="card-header">
+                        <div class="card-title h5">Apple</div>
+                        <div class="card-subtitle text-gray">Software and hardware</div>
+                      </div>
+                      <div class="card-body">To make a contribution to the world by making tools for the mind that advance humankind.</div>
+                      <div class="card-footer">
+                        <button class="btn btn-primary">Buy</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>Wrap an element by a container with the <code>popover</code> class.
+              And add a container with the <code>popover-container</code> next to the element.
+              You can use <a href="#cards">Cards</a> component inside the <code>popover-container</code>.
+            </p>
+            <p>Also, you can add the <code>popover-right</code>, <code>popover-bottom</code> or <code>popover-left</code> class to define the position.
+              By default, the popovers appear above the element.
+            </p>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"popover popover-right"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span>&gt;</span>right popover<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"popover-container"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-header"</span>&gt;</span>
+        ...
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-body"</span>&gt;</span>
+        ...
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-footer"</span>&gt;</span>
+        ...
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+          </div>
+
+
+
+
+
+          <div class="container" id="steps">
+            <h3 class="s-title">Passos<a class="anchor" href="#steps" aria-hidden="true">11.</a></h3>
+            <p>Steps are progress indicators of a sequence of task steps.</p>
+            <div class="docs-demo columns">
+              <div class="column col-12">
+                <ul class="step">
+                  <li class="step-item"><a class="tooltip" href="#steps" data-tooltip="Step 1 Tooltip"></a></li>
+                  <li class="step-item active"><a class="tooltip" href="#steps" data-tooltip="Step 2 Tooltip"></a></li>
+                  <li class="step-item"><a class="tooltip" href="#steps" data-tooltip="Step 3 Tooltip"></a></li>
+                  <li class="step-item"><a class="tooltip" href="#steps" data-tooltip="Step 4 Tooltip"></a></li>
+                </ul>
+              </div>
+              <div class="column col-12">
+                <ul class="step">
+                  <li class="step-item"><a class="tooltip" href="#steps" data-tooltip="Step 1 Tooltip">Step 1</a></li>
+                  <li class="step-item"><a class="tooltip" href="#steps" data-tooltip="Step 2 Tooltip">Step 2</a></li>
+                  <li class="step-item active"><a class="tooltip" href="#steps" data-tooltip="Step 3 Tooltip">Step 3</a></li>
+                  <li class="step-item"><a class="tooltip" href="#steps" data-tooltip="Step 4 Tooltip">Step 4</a></li>
+                </ul>
+              </div>
+            </div>
+            <p>Add a container element with the <code>step</code> class.
+              And add child elements with the <code>step-item</code> class.
+              The <code>step-item</code> with the <code>active</code> class will be highlighted and indicate the current state of progress.
+            </p>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"step"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"step-item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tooltip"</span> <span class="hljs-attr">data-tooltip</span>=<span class="hljs-string">"Step 1"</span>&gt;</span>Step 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"step-item active"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tooltip"</span> <span class="hljs-attr">data-tooltip</span>=<span class="hljs-string">"Step 2"</span>&gt;</span>Step 2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"step-item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tooltip"</span> <span class="hljs-attr">data-tooltip</span>=<span class="hljs-string">"Step 3"</span>&gt;</span>Step 3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"step-item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tooltip"</span> <span class="hljs-attr">data-tooltip</span>=<span class="hljs-string">"Step 4"</span>&gt;</span>Step 4<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+  </code></pre>
+          </div>
+
+
+
+
+<!-- TOOLTIPS  -->
+<div id="tooltips" class="container">
+      <h3 class="s-title section-space"><a class="anchor" href="#tooltips" aria-hidden="true">13.</a>Tooltips</h3>
+      <p class="description">Em determinadas aplicações o contexto não é suficiente para compreender alguma terminologia. Nestes casos ou recorremos a acrónimos e abreviaturas (dependendo do caso) ou então em situações de texto corrido podemos utilizar a <a class="tooltip" data-tooltip="esclarecimento adicional...">tooltip</a> para um "esclarecimento" adicional. Tooltips component is built entirely in CSS. Add the <code>tooltip</code> class and the <code>data-tooltip</code> attribute, which contains the tooltip content, to non self closing elements. And add the <code>tooltip-right</code>, <code>tooltip-bottom</code> or <code>tooltip-left</code> class to define the position of a tooltip.By default, the tooltip appears above the element.
+      </p>
+
+
+      <div class="description section-space columns text-center">
+              <div class="column col-xs-12">
+                <button class="btn btn-link tooltip" data-tooltip="Olá! Eu sou uma tooltip, em cima :)">em cima</button>
+              </div>
+              <div class="column col-xs-12">
+                <button class="btn btn-link tooltip tooltip-right" data-tooltip="Aqui estou eu do lado direito...">lado direito</button>
+              </div>
+              <div class="column col-xs-12">
+                <button class="btn btn-link tooltip tooltip-bottom" data-tooltip="agora estou em baixo...">por baixo</button>
+              </div>
+              <div class="column col-xs-12">
+                <button class="btn btn-link tooltip tooltip-left" data-tooltip="...e agora do lado esquerdo.">lado esquerdo</button>
+              </div>
+      </div>
+
+            <pre class="code" data-lang="EXEMPLO"><code><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn tooltip"</span> <span class="hljs-attr">data-tooltip</span>=<span class="hljs-string">"Lorem ipsum dolor sit amet"</span>&gt;</span>top tooltip<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn tooltip tooltip-right"</span> <span class="hljs-attr">data-tooltip</span>=<span class="hljs-string">"Lorem ipsum dolor sit amet"</span>&gt;</span>right tooltip<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>  </code></pre>
+</div>
+
+
+
+
+<!-- FORMULARIOS- grid nesting example -->
+<div id="formularios" class="container">
+        <h3 class="s-title section-space"><a href="#osprincipios" class="anchor" aria-hidden="true">9.</a>Os formulários</h3>
+
+        <p class="description">Os <strong>tipos de campos</strong> existem para serem utililizados nos <strong>formulários</strong> que compõem as aplicações e as plataformas web da FCT. São elementos comuns nas aberturas de concurso e projetos de investigação, estes elementos têm a finalidade de fornecer os dados e as informações que são submetidas. A <code>classe</code> define o estilo e tipo de input/campo com uma determinada função.</p>
+        <p class="description docs-note"></p>
+        <h5 class="description">Os tipos e estilos definidos</h5>
+        <p class="description">
+        São vários os tipos de campos utilizados nos formulários; Os estilos são controlados por uma <code>class</code> identificada na <code>CSS</code> e <code>HTML</code> de uma página web. Aqui mostramos dois exemplos comuns de um formulário simples com campos de input, com e sem "placeholder". No <a href ="">kit UI 3.3</a>  temos todas as possibilidades e soluções para os campos, são eles: text area, including input, seletores, checkbox, radio, switch, formulários com validação, entre outros.</p>
+
+    <div class="column col-12 description docs-note">
+        <div class="form-group col-10">
+          <label class="form-label" for="input-example-1">Text input normal</label>
+          <input class="form-input" type="text" id="input-example-1" placeholder="">
+        </div>
+        <div class="form-group col-8">
+          <label class="form-label" for="input-example-2">With placeholder</label>
+          <input class="form-input" type="email" id="input-example-2" placeholder="Placeholder">
+        </div>
+    </div>
+
+
+<pre class="code"><code><span class="com">&lt;!-- FORMULÁRIOS / CAMPOS COM INPUT  --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">"form-group"</span>&gt;
+  &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">"form-label"</span> <span class="atn">for</span>=<span class="atv">"exemplo2 input"</span>&gt;With placeholder&lt;<span class="tag">/label</span>&gt;
+  &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">"form-input"</span> <span class="atn">type</span>=<span class="atv">"text"</span> <span class="atn">id</span>=<span class="atv">"exemplo2 input"</span> 
+  <span class="atn">placeholder</span>=<span class="atv">"Placeholder"</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+<p class="mais"><a href ="">Mais exemplos</a></p>
+
+</div>
+
+
+<!-- AS TABELAS  -->
+<div class="container" id="tabelas">
+        <h3 class="s-title section-space"><a href="#tabelas" class="anchor" aria-hidden="true">10.</a> As tabelas</h3>
+        
+        <p class="description docs-note">O modelo mais básico do elemento <code>table</code> identifica-se por  &lt;table&gt. Adicionar classes ao elemento &lt;table&gt permite modificar o estilo e os tipos da tabela simples. A classe <code>table-striped</code> permite a visualização em modo "zebra"; Com a classe <code>table-hover</code> realçamos cada linha de informação através do "hover" do rato. A classe que destaca de forma ativa e fixa uma linha específica da tablea é a utilização da classe <code>active</code> dentro da &lt;tr&gt;.
+
+
+          <div class="description docs-note">
+                
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>Coordenador</th>
+                      <th>Área Científica</th>
+                      <th>Data do projeto</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Tatiana Coelho Silva Penedo</td>
+                      <td>Artes, Design e Humanidades</td>
+                      <td>14 de Outubro de 1994</td>
+                    </tr>
+                    <tr>
+                      <td>Tiago Alfredo Giboia</td>
+                      <td>Ciências da Engenharia e Tecnologia</td>
+                      <td>24 de Março de 1972</td>
+                    </tr>
+                    <tr>
+                      <td>Vilma Antunes de Carvalho</td>
+                      <td>Ciências da Saúde</td>
+                      <td>4 de Fevereiro de 1994</td>
+                    </tr>
+                    <tr>
+                      <td>Vitor Neves Marciano Pereira da Costa</td>
+                      <td>Ciências Económicas e Empresariais</td>
+                      <td>22 de Setembro 1999</td>
+                    </tr>
+                    <tr>
+                      <td>Zeferina Catarina de Almeida</td>
+                      <td>Educação e Ciências Sociais</td>
+                      <td>22 de Setembro de 1995</td>
+                    </tr>
+                  </tbody>
+                </table>
+         
+        </div>
+
+     
+<p class="section-space"></p>
+<!-- código para o modelo simples de uma tabela  -->
+
+<pre class="code"><code><span class="com">&lt;!-- TABELA - MODELO BÁSICO --&gt;</span>
+&lt;<span class="tag">table</span> <span class="atn">class</span>=<span class="atv">"table table-hover"</span>&gt;
+  &lt;<span class="tag">thead</span>&gt;
+    &lt;<span class="tag">tr</span>&gt;
+      &lt;<span class="tag">th</span>&gt;Coordenador&lt;<span class="tag">/th</span>&gt;
+      &lt;<span class="tag">th</span>&gt;Área Científica&lt;<span class="tag">/th</span>&gt;
+      &lt;<span class="tag">th</span>&gt;Data do projeto&lt;<span class="tag">/th</span>&gt;
+    &lt;<span class="tag">/tr</span>&gt;
+  &lt;<span class="tag">/thead</span>&gt;
+  &lt;<span class="tag">tbody</span>&gt;
+    &lt;<span class="tag">tr</span>&gt;
+      &lt;<span class="tag">td</span>&gt;Tatiana Coelho Silva Penedo&lt;<span class="tag">/td</span>&gt;
+      &lt;<span class="tag">td</span>&gt;Artes, Design e Humanidades&lt;<span class="tag">/td</span>&gt;
+      &lt;<span class="tag">td</span>&gt;14 de Outubro de 1994&lt;<span class="tag">/td</span>&gt;
+    &lt;<span class="tag">/tr</span>&gt;
+    &lt;<span class="tag">tr</span>&gt;
+      &lt;<span class="tag">td</span>&gt;...&lt;<span class="tag">/td</span>&gt;
+      &lt;<span class="tag">td</span>&gt;...&lt;<span class="tag">/td</span>&gt;
+      &lt;<span class="tag">td</span>&gt;...&lt;<span class="tag">/td</span>&gt;
+    &lt;<span class="tag">/tr</span>&gt;
+  &lt;<span class="tag">/tbody</span>&gt;
+&lt;<span class="tag">/table</span>&gt;</code></pre> 
+<p class="section-space"></p>
+<h5 class="description">O modelo básico e o composto</h5>
+<p class="description"> As <strong> tabelas têm dois modelos</strong>  gerais e a escolha dos tipos de tabela dependem dos conteúdos e dos requisitos funcionais. <strong>O modelo básico</strong> pode apresentar conteúdos de ordem alfabética, alfanumérica e contabilistica. Já no <strong>modelo composto</strong> podemos encontrar funções sobre conteúdos, isto é ações sobre um registo individual, registos múltiplos, informações com componentes de paginação e sorting, e até elementos dos formulários (input; checkbox, select, etc.).
+</p>
+
+<p class="mais"><a href ="">Mais exemplos</a></p>
+</div>
+
+
+
+
+      <footer class="section section-footer">
+      <p>Guia dos estilos para a web<br>
+      <a href="http://www.fct.pt/" target="_blank">Fundação para a Ciência e a Tecnologia</a>, <a href="" target="_blank">direitos reservados &copy; 2018</a>.</p>
+      <!-- BACK TO TOP -->
+      <a href="#content"><span id="to_top_scrollup"><i class="icone-harmonio_subir"></i></span></a>
+      </footer>
+
+
+    </div>
+  </div>
+
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-2702768-8', 'auto');
+      ga('send', 'pageview');
+  </script>
+</body>
+</html>

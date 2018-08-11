@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>estilos, guia de estilos web para a FCT</title>
+  <link rel="stylesheet" href="css/estilos.themeFCT.css">
+  <link rel="stylesheet" href="dist/base.spectre.css">
+  <link rel="stylesheet" href="css/estilos.guia.css">
+  <link rel="stylesheet" href="css/estilos.themeFCT.icones.css">
+  <link rel="stylesheet" href="dist/spectre.icones.css">
+</head>
+<body>
+  <div class="docs-container off-canvas">
+    <div class="docs-navbar">
+      <a class="off-canvas-toggle btn btn-link btn-action" href="#sidebar">
+        <i class="icon icon-menu"></i>
+      </a>
+      <a href="docs/v03_UI_review_estilos.pdf" title="Desenho das soluções UI, proposta visual em PDF, 1.2MB" target="_blank" class="btn btn-primary">Soluções UI, desenho</a>
+    </div>
+
+    <div id="sidebar" class="docs-sidebar off-canvas-sidebar">
+      <div class="docs-brand">
+        <a href="index.html" class="docs-logo">
+          <img src="img/logoestilos_black.svg" alt="estilos.CSS Framework">
+          <h2>estilos</h2>
+        </a>
+      </div>
+      <div class="docs-nav">
+        <div class="accordion-container">
+          <div class="accordion">
+            <input type="checkbox" id="docs-accordion-1" name="docs-accordion-checkbox" hidden>
+            <label class="accordion-header c-hand" for="docs-accordion-1">
+              Estrutura
+            </label>
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                <li class="menu-item">
+                  <a href="estrutura.html#introducao"><small class="opacity">01.</small> Introdução</a>
+                </li>   
+                <li class="menu-item">
+                  <a href="estrutura.html#comoinstalar"><small class="opacity">02.</small> Como instalar</a>
+                </li>
+                <li class="menu-item">
+                  <a href="estrutura.html#grelha"><small class="opacity">03.</small> A grelha</a>
+                </li>
+                <li class="menu-item">
+                  <a href="estrutura.html#tipografia"><small class="opacity">04.</small> A tipografia</a>
+                </li>
+                <li class="menu-item">
+                  <a href="estrutura.html#ascores"><small class="opacity">05.</small> As cores</a>
+                </li>
+                <li class="menu-item">
+                  <a href="estrutura.html#iconografia"><small class="opacity">06.</small> A iconografia</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion">
+            <input type="checkbox" id="docs-accordion-2" name="docs-accordion-checkbox" hidden checked>
+            <label class="accordion-header c-hand" for="docs-accordion-2">
+              Soluções UI
+            </label>
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+               <li class="menu-item">
+                  <a href="solucoesUI.html#osprincípios"><small class="opacity">07.</small> Os princípios</a>
+                </li>
+                <li class="menu-item">
+                  <a href="solucoesUI.html#botoes"><small class="opacity">08.</small> Os botões</a>
+                </li>           
+                <li class="menu-item">
+                  <a href="solucoesUI.html#formularios"><small class="opacity">09.</small> Os formulários</a>
+                </li>
+                <li class="menu-item">
+                  <a href="solucoesUI.html#tabelas"><small class="opacity">10.</small> As tabelas</a>
+                </li>
+                <li class="menu-item">
+                  <a href="solucoesUI.html#icones"><small class="opacity">11.</small> Os ícones, coleção</a>
+                </li>
+                <li class="menu-item">
+                  <a href="kitUI.html" target="_blank"><small class="opacity">12.</small> Kit UI 3.3, completo</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      
+
+          <div class="accordion">
+            <input type="checkbox" id="docs-accordion-3" name="docs-accordion-checkbox" hidden>
+            <label class="accordion-header c-hand" for="docs-accordion-3">
+             Suporte
+            </label>
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                <li class="menu-item">
+                  <a href="suporte.html#browser"><small class="opacity">13.</small> Browser suportado</a>
+                </li>
+                <li class="menu-item">
+                  <a href="suporte.html#instalacaomodos"><small class="opacity">14.</small> Modos de instalação</a>
+                </li>
+                <li class="menu-item">
+                  <a href="suporte.html#ostemas"><small class="opacity">15.</small> Os temas</a>
+                </li>
+                <li class="menu-item">
+                  <a href="suporte.html#git"><small class="opacity">16.</small> Projeto estilos, no Git</a>
+                </li>
+                <li class="menu-item">
+                  <a href="suporte.html#atualizacoes"><small class="opacity">17.</small> Atualizações</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <input type="checkbox" id="docs-accordion-5" name="docs-accordion-checkbox" hidden>
+            <label class="accordion-header c-hand" for="docs-accordion-5" >
+              Manuais digitais
+            </label>
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                <li class="menu-item">
+                  <a href="boaspraticas.html">Boas práticas na web</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Edição de contéudo web</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#r+">Recursos adicionais</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Linhas básicas</a>
+                </li>
+               <li class="menu-item">
+                  <a href="#">Acessibilidade</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <a class="off-canvas-overlay" href="#close"></a>
+    <div id="content" class="docs-content off-canvas-content">
+
+
+<!-- PRINCIPIOS - grid nesting example -->
+<div id="osprincípios" class="container">
+        <img src="img/00a_fundo_estilos.svg" class="img-responsive rounded" alt="">
+        <h3 class="s-title docs-note"><a href="#osprincipios" class="anchor" aria-hidden="true">07.</a>Os princípios</h3>
+
+        <p class="description">As soluções para os interfaces web dependem da qualidade de construção e do design da solução. As bases e estudos de design (UI), assim como a exeperiência de utilização (UX) são fundamentais para trabalhar os seguintes aspetos:</p>
+        <ul class="no-bullet " >
+              <li>Design elegante e funcional;</li>
+              <li>O chamado <a href="https://www.growunder.com/pt/blog/dicas/56-web-copywriting-10-dicas-para-aumentar-as-conversoes">"copy"</a> deve ser trabalhado por uma equipa especializada;</li>
+              <li>Princípios de <a href="https://en.wikipedia.org/wiki/Universal_design#Design_standards">design standard</a>.</li>
+        </ul>
+        <p class="description docs-note"></p>
+        <h5 class="description">Ser prático e aplicar elegância...</h5>
+        <p class="description">A <strong>experiência de utilização</strong> e o <strong>design normalmente apresentam resultados</strong>! No entanto há que ter em conta que o conteúdo de texto ou imagens demasiado ornamentadas não trazem benifícios. As bases, padrões e os princípios de design são importantes para que a linguagem visual das soluções UI tenham consistência, clareza e intuição nos interfaces visuais.</p>
+</div>
+
+
+<!-- BOTOES -->
+<div id="botoes" class="container">
+        <h3 class="s-title section-space"><a href="#icons" class="anchor" aria-hidden="true">08.</a>Os botões</h3>
+         
+        <p class="description docs-note">O <strong>botão é um elemento</strong> importante nas ações de qualquer site ou aplicação. Nos projetos web da FCT temos seis tipos de botões estilizados e identificados por uma classe <code>btn</code> que também podem estar nos atributos como &lt;a&gt;, &lt;input&gt; ou &lt;button&gt; e assim adquirir, através da CSS, a formatação que foi desenhada.
+        </p>
+   
+         <h5 class="description">A tipologia e os estilos</h5>
+         <p class="description"> Ao aplicar a classe <code>btn</code> do botão, temos o estilo que vem por defeito. Com a adição de outras classes podemos visualizar os restantes botões, respetivamente, as classes <code>btn-primary</code>,  <code>btn-secondary</code>, e <code>btn-link</code> para o botão primário, secundário e link simples do tema original.     
+         </p>
+         <p class="docs-note">
+         <button class="btn">Salvar</button>
+         <button class="btn btn-primary">Registar</button>
+         <button class="btn btn-alternativo">Cancelar</button>
+         <button class="btn btn-link">Link simples</button>
+         </p>
+                
+         <p class="docs-note">Para um botão sem qualquer acção (estado desabilitado) aplica-se a classe <code>btn-disabled</code> e temos a função e o estilo pretendido.</p>
+         <button class="btn btn-disabled " tabindex="-1">botão desativado</button>
+
+<!-- código dos botões utilizados -->
+<pre class="code"><code><span class="com">&lt;!-- OS TIPOS DE BOTÕES --&gt;</span>
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">"btn"</span>&gt;Salvar&lt;<span class="tag">/button</span>&gt; <span class="com">(exemplo do botão tipo)</span> 
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">"btn btn-primary"</span>&gt;Registar&lt;<span class="tag">/button</span>&gt; <span class="com">( " " botão primário)</span>
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">"btn btn-secondary"</span>&gt;Cancelar&lt;<span class="tag">/button</span>&gt; <span class="com">( " " botão secundário)</span>    
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">"btn btn-link"</span>&gt;link simples&lt;<span class="tag">/button</span>&gt; <span class="com">( " " link simples)</span>
+
+<span class="com">&lt;!-- ESTADO DESATIVADO DO BOTÃO --&gt;</span>
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">"btn-disabled"</span> <span class="atn">tabindex</span>=<span class="atv">"-1"</span>&gt;botão desativado&lt;<span class="tag">/button</span>&gt;
+</code></pre> 
+                        
+</div>
+
+
+<!-- FORMULARIOS - grid nesting example -->
+<div id="formularios" class="container">
+        <h3 class="s-title section-space"><a href="#osprincipios" class="anchor" aria-hidden="true">09.</a>Os formulários</h3>
+
+        <p class="description">Os <strong>tipos de campos</strong> existem para serem utililizados nos <strong>formulários</strong> que compõem as aplicações e as plataformas web da FCT. São elementos comuns nas aberturas de concurso e projetos de investigação, estes elementos têm a finalidade de fornecer os dados e as informações que são submetidas. A <code>classe</code> define o estilo e tipo de input/campo com uma determinada função.</p>
+        <p class="description docs-note"></p>
+        <h5 class="description">Os tipos e estilos definidos</h5>
+        <p class="description">
+        São vários os tipos de campos utilizados nos formulários; Os estilos são controlados por uma <code>class</code> identificada na <code>CSS</code> e <code>HTML</code> de uma página web. Aqui mostramos dois exemplos comuns de um formulário simples com campos de input, com e sem "placeholder". No <a href ="kitUI.html">kit UI 3.3</a>  temos todas as possibilidades e soluções para os campos, são eles: text area, including input, seletores, checkbox, radio, switch, formulários com validação, entre outros.</p>
+
+    <div class="column col-12 description docs-note">
+        <div class="form-group col-10">
+          <label class="form-label" for="input-example-1">Text input normal</label>
+          <input class="form-input" type="text" id="input-example-1" placeholder="">
+        </div>
+        <div class="form-group col-8">
+          <label class="form-label" for="input-example-2">With placeholder</label>
+          <input class="form-input" type="email" id="input-example-2" placeholder="Placeholder">
+        </div>
+    </div>
+
+
+<pre class="code"><code><span class="com">&lt;!-- FORMULÁRIOS / CAMPOS COM INPUT  --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">"form-group"</span>&gt;
+  &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">"form-label"</span> <span class="atn">for</span>=<span class="atv">"exemplo2 input"</span>&gt;With placeholder&lt;<span class="tag">/label</span>&gt;
+  &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">"form-input"</span> <span class="atn">type</span>=<span class="atv">"text"</span> <span class="atn">id</span>=<span class="atv">"exemplo2 input"</span> 
+  <span class="atn">placeholder</span>=<span class="atv">"Placeholder"</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+<p class="mais"><a href ="">Mais exemplos</a></p>
+
+</div>
+
+
+<!-- AS TABELAS  -->
+<div class="container" id="tabelas">
+        <h3 class="s-title section-space"><a href="#tabelas" class="anchor" aria-hidden="true">10.</a> As tabelas</h3>
+        
+        <p class="description docs-note">O modelo mais básico do elemento <code>table</code> identifica-se por  &lt;table&gt. Adicionar classes ao elemento &lt;table&gt permite modificar o estilo e os tipos da tabela simples. A classe <code>table-striped</code> permite a visualização em modo "zebra"; Com a classe <code>table-hover</code> realçamos cada linha de informação através do "hover" do rato. A classe que destaca de forma ativa e fixa uma linha específica da tablea é a utilização da classe <code>active</code> dentro da &lt;tr&gt;.
+
+
+          <div class="description docs-note">
+                
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>Coordenador</th>
+                      <th>Área Científica</th>
+                      <th>Data do projeto</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Tatiana Coelho Silva Penedo</td>
+                      <td>Artes, Design e Humanidades</td>
+                      <td>14 de Outubro de 1994</td>
+                    </tr>
+                    <tr>
+                      <td>Tiago Alfredo Giboia</td>
+                      <td>Ciências da Engenharia e Tecnologia</td>
+                      <td>24 de Março de 1972</td>
+                    </tr>
+                    <tr>
+                      <td>Vilma Antunes de Carvalho</td>
+                      <td>Ciências da Saúde</td>
+                      <td>4 de Fevereiro de 1994</td>
+                    </tr>
+                    <tr>
+                      <td>Vitor Neves Marciano Pereira da Costa</td>
+                      <td>Ciências Económicas e Empresariais</td>
+                      <td>22 de Setembro 1999</td>
+                    </tr>
+                    <tr>
+                      <td>Zeferina Catarina de Almeida</td>
+                      <td>Educação e Ciências Sociais</td>
+                      <td>22 de Setembro de 1995</td>
+                    </tr>
+                  </tbody>
+                </table>
+         
+        </div>
+
+     
+<p class="section-space"></p>
+<!-- código para o modelo simples de uma tabela  -->
+
+<pre class="code"><code><span class="com">&lt;!-- TABELA - MODELO BÁSICO --&gt;</span>
+&lt;<span class="tag">table</span> <span class="atn">class</span>=<span class="atv">"table table-hover"</span>&gt;
+  &lt;<span class="tag">thead</span>&gt;
+    &lt;<span class="tag">tr</span>&gt;
+      &lt;<span class="tag">th</span>&gt;Coordenador&lt;<span class="tag">/th</span>&gt;
+      &lt;<span class="tag">th</span>&gt;Área Científica&lt;<span class="tag">/th</span>&gt;
+      &lt;<span class="tag">th</span>&gt;Data do projeto&lt;<span class="tag">/th</span>&gt;
+    &lt;<span class="tag">/tr</span>&gt;
+  &lt;<span class="tag">/thead</span>&gt;
+  &lt;<span class="tag">tbody</span>&gt;
+    &lt;<span class="tag">tr</span>&gt;
+      &lt;<span class="tag">td</span>&gt;Tatiana Coelho Silva Penedo&lt;<span class="tag">/td</span>&gt;
+      &lt;<span class="tag">td</span>&gt;Artes, Design e Humanidades&lt;<span class="tag">/td</span>&gt;
+      &lt;<span class="tag">td</span>&gt;14 de Outubro de 1994&lt;<span class="tag">/td</span>&gt;
+    &lt;<span class="tag">/tr</span>&gt;
+    &lt;<span class="tag">tr</span>&gt;
+      &lt;<span class="tag">td</span>&gt;...&lt;<span class="tag">/td</span>&gt;
+      &lt;<span class="tag">td</span>&gt;...&lt;<span class="tag">/td</span>&gt;
+      &lt;<span class="tag">td</span>&gt;...&lt;<span class="tag">/td</span>&gt;
+    &lt;<span class="tag">/tr</span>&gt;
+  &lt;<span class="tag">/tbody</span>&gt;
+&lt;<span class="tag">/table</span>&gt;</code></pre> 
+<p class="section-space"></p>
+<h5 class="description">O modelo básico e o composto</h5>
+<p class="description"> As <strong> tabelas têm dois modelos</strong>  gerais e a escolha dos tipos de tabela dependem dos conteúdos e dos requisitos funcionais. <strong>O modelo básico</strong> pode apresentar conteúdos de ordem alfabética, alfanumérica e contabilistica. Já no <strong>modelo composto</strong> podemos encontrar funções sobre conteúdos, isto é ações sobre um registo individual, registos múltiplos, informações com os componentes de paginação e sorting, e até elementos dos formulários (input; checkbox, select, etc.).
+</p>
+
+<p class="mais"><a href ="">Mais exemplos</a></p>
+</div>
+
+
+<div id="icones" class="container">
+        <h3 class="s-title docs-note"><a href="#icons" class="anchor" aria-hidden="true">11.</a>Os ícones <!--small class="label label-primary">A CONCLUIR...</small--></h3>
+        <div class="docs-note">
+        <p>A coleção dos ícones personalizados para a FCT, com funções e utilização, estão nesta área do guia. Para aplicar nos projetos web, basta identificar ou adicionar à pasta <code>/css</code> com o nome <code>estilos.themeFCT.icones.css</code>, e o ficheiro <code>spectre.icones.css</code> localizado em <code>/dist</code> da estrutura do projeto. Aplicar as coleções de forma independente só temos que identificar o &lt;head&gt;, do HTML e extrair as CSS dos ícones, que estão também no setor <strong>suporte</strong>, em  "<a href="suporte.html#ostemas">os temas</a>".</p>
+        </div>
+        <p><small class="label">ÍCONES COM AÇÕES</small></p>
+        <div class="columns">
+          <div class="column col-3 col-md-6">
+            <a href="#icons-navigation" class="tooltip tooltip-right icone_green" data-tooltip="ícone de adicionar ficheiro"><i class="icone-adicionar"></i></a>
+            <p>Class="icone-adicionar"</p>
+          </div>
+          <div class="column col-3 col-md-6">
+            <a href="#icons-navigation" class="tooltip tooltip-right icone_green" data-tooltip="ícone para as ações nas tabelas"><i class="icone-acoes"></i></a>
+            <p>icone-acoes</p>
+          </div>
+          <div class="column col-3 col-md-6">  
+              <a href="#icons-navigation" class="icone_graybot"><i class="icone-acoes_small"></i></a> 
+            <p>icone-acoes_small</p>
+          </div>
+          <div class="column col-3 col-md-6">  
+              <a href="#icons-navigation" class="icone_graybot"><i class="icone-eliminar"></i></a> 
+            <p>icone-eliminar</p>
+          </div>
+          <div class="column col-3 col-md-6">  
+              <a href="#icons-navigation" class="icone_graybot"><i class="icone-visualizar"></i></a> 
+            <p>icone-visualizar</p>
+          </div>
+          <div class="column col-3 col-md-6">  
+              <a href="#icons-navigation" class="icone_graybot"><i class="icone-editar"></i></a> 
+            <p>icone-editar</p>
+          </div>
+        </div>
+ 
+        <p><small class="label">ALERTAS, PAINEIS E JANELAS MODAIS</small></p>
+        <div class="columns">
+          <div class="column col-3 col-md-6">
+            <a class="icone_gray"><i class="icone-informar"></i></a>
+            <p>icone-informar</p>
+          </div> 
+          <div class="column col-3 col-md-6">
+             <a class="icone_gray"><i class="icone-aviso"></i></a> 
+            <p>icone-aviso</p>
+          </div>
+          <div class="column col-3 col-md-6">
+            <a class="icone_gray"><i class="icone-sucesso"></i></a> 
+            <p>icone-sucesso</p>
+          </div>
+          <div class="column col-3 col-md-6">
+            <a class="icone_gray"><i class="icone-erro"></i></a>        
+            <p>icone-erro</p>
+          </div>        
+         <div class="column col-3 col-md-6">
+            <a class="icone_gray"><i class="icone-duvidas"></i></a>
+            <p>icone-duvidas</p>
+          </div>
+          <div class="column col-3 col-md-6">
+            <a class="icone_gray"><i class="icone-erro_input"></i></a>
+            <p>icone-erro_input</p>
+          </div> 
+          <div class="column col-3 col-md-6">
+            <a class="icone_gray"><i class="icone-sucesso_input"></i></a>
+            <p>icone-sucesso_input</p>
+          </div>  
+          <div class="column col-3 col-md-6">
+            <a class="icone_gray"><i class="icone-atencao_input"></i></a>
+            <p>icone-atencao_input</p>
+          </div>  
+          <div class="column col-3 col-md-6">
+            <a class="icone_gray"><i class="icone-duvidas_input"></i></a>
+            <p>icone-duvidas_input</p>
+          </div>  
+        </div>
+            
+
+        <p><small class="label">OUTRAS UTILIZAÇÕES DOS ÍCONES</small></p>
+        <div class="columns">
+          <div class="column col-3 col-md-6">
+             <a class="icone_gray"><i class="icone-pesquisa"></i></a> 
+            <p>icone-pesquisa</p>
+          </div>
+          <div class="column col-3 col-md-6">
+             <a class="icone_gray"><i class="icone-upload"></i></a> 
+            <p>icone-upload</p>
+          </div>
+           <div class="column col-3 col-md-6">
+             <a class="icone_gray"><i class="icone-download"></i></a> 
+            <p>icone-download</p>
+          </div>
+          <div class="column col-3 col-md-6">
+             <a class="icone_gray"><i class="icone-legendas"></i></a> 
+            <p>icone-legendas</p>
+          </div>
+          <div class="column col-3 col-md-6">
+            <a class="icone_gray"><i class="icone-login"></i></a>
+            <p>icone-login</p>
+          </div>  
+          <div class="column col-3 col-md-6">
+            <a class="icone_gray"><i class="icone-logout"></i></a>
+            <p>icone-logout</p>
+          </div>
+          <div class="column col-3 col-md-6">
+            <a class="icone_gray"><i class="icone-harmonio_descer"></i></a>
+            <p>icone-harmonio_descer</p>
+          </div>
+          <div class="column col-3 col-md-6">
+            <a class="icone_gray"><i class="icone-harmonio_subir"></i></a>
+            <p>icone-harmonio_subir</p>
+          </div>  
+          <div class="column col-3 col-md-6">
+            <a class="icone_gray"><i class="icone-utilizador"></i></a>
+            <p>icone-utilizador</p>
+          </div>
+          <div class="column col-3 col-md-6">
+            <a class="icone_gray"><i class="icone-pessoas"></i></a>
+            <p>icone-pessoas</p>
+          </div>  
+          <div class="column col-3 col-md-6">
+            <a class="icone_gray"><i class="icone-pessoa"></i></a>
+            <p>icone-pessoa</p>
+          </div>  
+          <div class="column col-3 col-md-6">
+            <a class="icone_gray"><i class="icone-ficheiro"></i></a>
+            <p>icone-ficheiro</p>
+          </div>  
+          <div class="column col-3 col-md-6">
+            <a class="icone_gray"><i class="icone-documento"></i></a>
+            <p>icone-documento</p>
+          </div>  
+          <div class="column col-3 col-md-6">
+            <a class="icone_gray"><i class="icone-lock"></i></a>
+            <p>icone-lock</p>
+          </div>  
+          <div class="column col-3 col-md-6">
+            <a class="icone_gray"><i class="icone-unlock"></i></a>
+            <p>icone-unlock</p>
+          </div> 
+          <div class="column col-3 col-md-6">
+            <a class="icone_gray"><i class="icone-favorito"></i></a>
+            <p>icone-favorito</p>
+          </div> 
+          <div class="column col-3 col-md-6">
+            <a class="icone_gray"><i class="icone-imprimir"></i></a>
+            <p>icone-imprimir</p>
+          </div> 
+          <div class="column col-3 col-md-6">
+            <a class="icone_gray"><i class="icone-calendario"></i></a>
+            <p>icone-calendario</p>
+          </div> 
+          <div class="column col-3 col-md-6">
+            <a class="icone_gray"><i class="icone-reordenar"></i></a>
+            <p> icone-reordenar</p>
+          </div>     
+        </div>
+
+
+        <p><small class="label">ÍCONES, TEMA ORIGINAL</small></p>
+        <div class="columns">
+         <div class="column col-3 col-md-6">
+            <a href="#icons-navigation" class="icone_gray"><i class="icon icon-menu"></i></a>
+            <p>icon-menu</p>
+          </div>
+          <div class="column col-3 col-md-6">
+            <a href="#icons-navigation" class="icone_gray"><i class="icon icon-apps"></i></a>
+            </button>
+            <p>icon-apps</p>
+          </div>
+          <div class="column col-3 col-md-6">
+            <a href="#icons-navigation" class="icone_gray"><i class="icon icon-arrow-up"></i></a>
+            <p>icon-arrow-up</p>
+          </div>
+          <div class="column col-3 col-md-6">
+            <a href="#icons-navigation" class="icone_gray"><i class="icon icon-arrow-right"></i></a>
+            <p>icon-arrow-right</p>
+          </div>
+          <div class="column col-3 col-md-6">
+            <a href="#icons-navigation" class="icone_gray"><i class="icon icon-arrow-down"></i></a>
+            <p>icon-arrow-down</p>
+          </div>
+          <div class="column col-3 col-md-6">
+            <a href="#icons-navigation" class="icone_gray"><i class="icon icon-arrow-left"></i></a>
+            <p>icon-arrow-left</p>
+          </div>
+          <div class="column col-3 col-md-6">
+            <a href="#icons-navigation" class="icone_gray"><i class="icon icon-caret"></i></a>
+            <p>icon-caret</p>
+          </div>
+        </div>
+
+
+
+        <h5 id="icons-sizes" class="s-subtitle">Aplicar a "classe" ao ícone</h5>
+<!-- icons -->
+<pre class="code"><code>&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">"icone-adicionar"</span>&gt;&lt;<span class="tag">/i</span>&gt;
+</code></pre>
+        <p class="description docs-note">Para colocar em prática a terminologia <code>&lt;i&gt;</code> aplica-se a classe com a identificação de cada ícone, tal como foi feito no exemplo acima. <!--code>&lt;i class="icone-adicionar"&gt;&lt;/i&gt;</code--></p>
+        <p class="description docs-note"></p>
+        <h5 class="description">Download do material </h5>
+        <p class="description">O <strong>pack personalizado dos ícones</strong> tem inspiração e utilização das coleções gratuitas de: a) Alessio Atzeni - <a href="http://www.alessioatzeni.com/metrize-icons/">Metrize</a> icons e  b) <a href="https://ionicons.com/cheatsheet.html">Ionicons-2.0.1</a>. Pode fazer o download do material iconográfico e trabalhar de forma independente em qualquer projeto web da FCT.</p>
+        <ul class="no-bullet subdue">
+            <li><a href="#">Font icons</a>, pack completo.</li>
+            <li><a href="#">Material SVG</a>, pack completo.</li>
+        </ul>
+  </div>
+
+
+      <footer class="section section-footer">
+      <p>Guia dos estilos para a web<br>
+      <a href="http://www.fct.pt/" target="_blank">Fundação para a Ciência e a Tecnologia</a>, <a href="" target="_blank">direitos reservados &copy; 2018</a>.</p>
+
+      <!-- BACK TO TOP -->
+      <a href="#content"><span id="to_top_scrollup"><i class="icone-harmonio_subir"></i></span></a>
+      </footer>
+
+
+    </div>
+  </div>
+
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-2702768-8', 'auto');
+      ga('send', 'pageview');
+  </script>
+</body>
+</html>

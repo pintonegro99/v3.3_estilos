@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>estilos, guia de estilos web para a FCT</title>
+  <link rel="stylesheet" href="css/estilos.themeFCT.css">
+  <link rel="stylesheet" href="dist/base.spectre.css">
+  <link rel="stylesheet" href="css/estilos.guia.css">
+  <link rel="stylesheet" href="css/estilos.themeFCT.icones.css">
+  <link rel="stylesheet" href="dist/spectre.icones.css">
+</head>
+<body>
+  <div class="docs-container off-canvas">
+    <div class="docs-navbar">
+      <a class="off-canvas-toggle btn btn-link btn-action" href="#sidebar">
+        <i class="icon icon-menu"></i>
+      </a>
+      <a href="docs/v03_UI_review_estilos.pdf" title="Desenho das soluções UI, proposta visual em PDF, 1.2MB" target="_blank" class="btn btn-primary">Soluções UI, desenho</a>
+    </div>
+
+    <div id="sidebar" class="docs-sidebar off-canvas-sidebar">
+      <div class="docs-brand">
+        <a href="index.html" class="docs-logo">
+          <img src="img/logoestilos_black.svg" alt="estilos.CSS Framework">
+          <h2>estilos</h2>
+        </a>
+      </div>
+      <div class="docs-nav">
+        <div class="accordion-container">
+          <div class="accordion">
+            <input type="checkbox" id="docs-accordion-1" name="docs-accordion-checkbox" hidden checked>
+            <label class="accordion-header c-hand" for="docs-accordion-1">
+              Estrutura
+            </label>
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                <li class="menu-item">
+                  <a href="estrutura.html#introducao"><small class="opacity">01.</small> Introdução</a>
+                </li>   
+                <li class="menu-item">
+                  <a href="estrutura.html#comoinstalar"><small class="opacity">02.</small> Como instalar</a>
+                </li>
+                <li class="menu-item">
+                  <a href="estrutura.html#grelha"><small class="opacity">03.</small> A grelha</a>
+                </li>
+                <li class="menu-item">
+                  <a href="estrutura.html#tipografia"><small class="opacity">04.</small> A tipografia</a>
+                </li>
+                <li class="menu-item">
+                  <a href="estrutura.html#ascores"><small class="opacity">05.</small> As cores</a>
+                </li>
+                <li class="menu-item">
+                  <a href="estrutura.html#iconografia"><small class="opacity">06.</small> A iconografia</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion">
+            <input type="checkbox" id="docs-accordion-2" name="docs-accordion-checkbox" hidden>
+            <label class="accordion-header c-hand" for="docs-accordion-2">
+              Soluções UI
+            </label>
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+               <li class="menu-item">
+                  <a href="solucoesUI.html#princípios"><small class="opacity">07.</small> Os princípios</a>
+                </li>
+                <li class="menu-item">
+                  <a href="solucoesUI.html#botoes"><small class="opacity">08.</small> Os botões</a>
+                </li>           
+                <li class="menu-item">
+                  <a href="solucoesUI.html#formularios"><small class="opacity">09.</small> Os formulários</a>
+                </li>
+                <li class="menu-item">
+                  <a href="solucoesUI.html#tabelas"><small class="opacity">10.</small> As tabelas</a>
+                </li>
+                <li class="menu-item">
+                  <a href="solucoesUI.html#icones"><small class="opacity">11.</small> Os ícones, coleção</a>
+                </li>
+                <li class="menu-item">
+                  <a href="kitUI.html" target="_blank"><small class="opacity">12.</small> Kit UI 3.3, completo</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      
+ 
+          <div class="accordion">
+            <input type="checkbox" id="docs-accordion-3" name="docs-accordion-checkbox" hidden>
+            <label class="accordion-header c-hand" for="docs-accordion-3">
+             Suporte 
+            </label>
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                <li class="menu-item">
+                  <a href="suporte.html#browser"><small class="opacity">13.</small> Browser suportado</a>
+                </li>
+                <li class="menu-item">
+                  <a href="suporte.html#instalacaomodos"><small class="opacity">14.</small> Modos de instalação</a>
+                </li>
+                <li class="menu-item">
+                  <a href="suporte.html#ostemas"><small class="opacity">15.</small> Os temas</a>
+                </li>
+                <li class="menu-item">
+                  <a href="suporte.html#git"><small class="opacity">16.</small> Projeto estilos, no Git</a>
+                </li>
+                <li class="menu-item">
+                  <a href="suporte.html#atualizacoes"><small class="opacity">17.</small> Atualizações</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <input type="checkbox" id="docs-accordion-5" name="docs-accordion-checkbox" hidden>
+            <label class="accordion-header c-hand" for="docs-accordion-5" >
+              Manuais digitais 
+            </label>
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                <li class="menu-item">
+                  <a href="boaspraticas.html">Boas práticas na web</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Edição de contéudo web</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#r+">Recursos adicionais</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Linhas básicas</a>
+                </li>
+               <li class="menu-item">
+                  <a href="#">Acessibilidade</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<a class="off-canvas-overlay" href="#close"></a>
+<div id="content" class="docs-content off-canvas-content">
+
+<!-- grid nesting example -->
+<div id="introducao" class="container">
+    <img src="img/00b_fundo_estilos.svg" class="img-responsive rounded" alt="">
+    <h3 class="s-title docs-note"><a href="#introducao" class="anchor" aria-hidden="true">01.</a>Introdução</h3>
+    <p class="description">O projeto <strong>estilos</strong> é composto por setores, organizados, para fornecer ao "developer" e utilizador a melhor informação sobre a construção das plataformas e aplicações web da FCT. Os <strong>elementos</strong> e <strong>componentes UI</strong> foram desenhados e trabalhados para garantir uma melhor consistência visual, extrair fácilmente o código das soluções e atualizar a informação do guia. O objetivo é <strong>poupar tempo</strong> na informação e na construção das soluções UI tipificadas.</p>
+</div>
+
+<!-- grid nesting example -->
+<div id="comoinstalar" class="container">      
+    <h3 class="s-title docs-note"><a href="#comoinstalar" class="anchor" aria-hidden="true">02.</a>Como instalar</h3>
+    <p class="description docs-note">A <strong>base de instalação</strong> são um conjunto de CSS preparados para trabalhar os projetos de forma independente, ou por uma <strong>estrutura tipo</strong>, fornecida por nós, para os projetos web. Pode-se efetuar a instalação através de cinco formas, e o modo manual é o mais básico.</p>
+    <h5 class="description">A instalação manual</h5>
+    <p class="description">Para começar faça o download completo do projeto base, ou de forma independente retire apenas a CSS para os estilos. A base original do projeto está numa pasta com o nome <strong>/dist </strong> com o ficheiro <code>base.spectre.css</code> da framework. O  <a href ="suporte.html#ostemas">tema estilos</a>, com personalização, está localizado na pasta <strong>/css</strong> com o ficheiro <code>estilos.themeFCT.css</code>. Ainda existem outras CSS que podem auxiliar os projetos, são elas: <code>estilos.themeFCT.icones.css</code>, para utilizar a coleção de ícones personalizados e uma outra CSS para a apresentação estrutural do guia.</p><br>
+    <a href="" target="_blank" class="btn btn">projeto base</a>
+    <p class="description docs-note"></p>
+    <h5 class="description">Outros modos de instalação</h5>
+    <p class="description">Existem mais quatro possibilidades de instalação a que os programadores/"developers" podem recorrer e trabalhar. Podem consultar toda a informação através do setor "Suporte" em "Modos de instalação".</p>
+    <p class="mais"><a href ="suporte.html#instalacaomodos">Mais </a> sobre o tema.</p>
+</div>
+
+
+<!-- grid nesting example -->
+<div id="grelha" class="container"> 
+    <h3 class="s-title docs-note"><a href="#grelha" class="anchor" aria-hidden="true">03.</a>A grelha</h3> 
+    <p class="description ">A <strong>estrutura desta grelha</strong> está trabalhada para ser fléxivel, ajustável e responsiva com base em 12 colunas. É possível ter boas soluções para compor o layout da página, uma vez que a grelha permite ter qualquer quantidade de colunas <code>columns</code> dentro de um <code>container</code>. Ou seja pode colocar as colunas como pretender (tal como o exemplo abaixo) e  adicionar à coluna ou container uma "classe" para mudar o fundo, distâncias, alturas, e outras funções. Qualquer <strong>elemento</strong>  ou <strong>componente</strong> pode ser colocado dentro de uma determinada coluna, desde que esta fique dentro do container e depois basta especificar a largura da coluna <code>col-[1-12]</code> e trabalhar o conteúdo.</p>
+
+    <p class="description docs-note"></p>      
+    <div class="docs-demo columns description">
+        <div class="column">
+          <div class="bg-gray text-secondary docs-block"></div>
+        </div>
+        <div class="column">
+          <div class="bg-gray text-secondary docs-block"></div>
+        </div>
+        <div class="column">
+          <div class="bg-gray text-secondary docs-block"></div>
+        </div>
+        <div class="column">
+          <div class="bg-gray text-secondary docs-block"></div>
+        </div>
+        <div class="column">
+          <div class="bg-gray text-secondary docs-block"></div>
+        </div>
+        <div class="column">
+          <div class="bg-gray text-secondary docs-block"></div>
+        </div>
+        <div class="column">
+          <div class="bg-gray text-secondary docs-block"></div>
+        </div>
+        <div class="column">
+          <div class="bg-gray text-secondary docs-block"></div>
+        </div>
+        <div class="column">
+          <div class="bg-gray text-secondary docs-block"></div>
+        </div>
+        <div class="column">
+          <div class="bg-primary text-secondary docs-block"></div>
+        </div>
+        <div class="column">
+          <div class="bg-primary text-secondary docs-block"></div>
+        </div>
+        <div class="column">
+          <div class="bg-primary text-secondary docs-block"></div>
+        </div>
+      </div> 
+      <div class="columns">
+        <div class="column col-12">
+          <div class="bg-gray docs-block">col-12 (100%)</div>
+        </div>
+      </div> 
+
+      <div class="columns">
+        <div class="column col-9">
+          <div class="bg-gray docs-block">col-9 (75%)</div>
+        </div>
+      </div> 
+
+      <div class="columns">
+        <div class="column col-6">
+          <div class="bg-gray docs-block">col-6 (50%)</div>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column col-3">
+          <div class="bg-gray docs-block">col-3 (25%)</div>
+        </div>
+    </div>
+
+    <p class="mais"><a href ="#">Mais</a> sobre o tema.</p>
+</div>
+
+    
+<!-- grid nesting example -->
+<div id="tipografia" class="container">  
+    <div class="columns">
+      <div class="column col-12 docs-note s-title">  
+      <h3 class="s-title"><a href="#tipografia" class="anchor" aria-hidden="true">04.</a>A tipografia</h3>
+      </div>
+       
+      <div class="column col-8 col-md-12"> 
+        <p class="description">A <strong>escolha</strong> de uma boa <strong>tipografia</strong> pode resolver, em grande parte, os problemas de legibilidade e facilidade de leitura das plataformas web. A FCT, utiliza a <strong>Lora e Source Sans Pro</strong> como fontes principais. A coleção tipográfica - <a href="https://fonts.google.com/specimen/Lora" target="_blank">Lora</a> e <a href="https://fonts.google.com/specimen/Source+Sans+Pro" target="_blank">Source Sans Pro</a>  - estãos disponíveis na web e são open source.</p>
+        <p class="docs-note"></p>
+        <h5 class="description">Aplicar corretamente a tipografia</h5>
+        <p class="description">A tipografia correta já vem devidamente carregada no tema personalizado. Pode ainda efetuar uma configuração de forma manual na CSS com o <code>font-family</code> correto e a fonte embebida no HTML, tal como o exemplo mais abaixo.</p>
+      </div>  
+                 
+      <div class="column col-4 col-md-12">
+          <p class="type_showcase_lora">Abcdef<br>123456<span>Lora</span></p>
+          <p class="type_showcase_sourcesans">Abcdfgh<br>123456<span>Source Sans</span></p>   
+      </div> 
+
+      <div class="column col-12 col-md-12">
+              <!-- fonts -->
+<pre class="code"><code><span class="com">&lt;!-- IDENTIFICAR A TIPOGRAFIA NA CSS --&gt;</span>
+<span class="com">&lt;!-- Familia tipográfica Lora --&gt;</span>
+<span class="atn">font-family</span>: <span class="atv">'Lora', serif;</span>
+<span class="com">&lt;!-- Familia tipográfica Source Sans Pro --&gt;</span>
+<span class="atn">font-family</span>: <span class="atv">"Source Sans Pro", sans-serif;</span>
+
+<span class="com">&lt;!-- EMBEBER A FONTE NO HTML --&gt;</span>
+&lt;<span class="tag">link</span> <span class="atn">href</span>=<span class="atv">"https://fonts.googleapis.com/css?
+family=Lora:400,400i,700,700i"</span><span class="atn">rel</span>=<span class="atv">"stylesheet"</span>&gt;
+&lt;<span class="tag">link</span> <span class="atn">href</span>=<span class="atv">"https://fonts.googleapis.com/css?
+family=Source+Sans+Pro:200,300,400,600,700,900"</span>
+<span class="atn">rel</span>=<span class="atv">"stylesheet"</span>&gt;
+</code></pre>
+     </div>  
+  </div>
+  <p class="mais">Ver os <a href ="kitui.html#tipografiabasica">elementos básicos</a> da tipografia sugerida.</p>
+</div>
+
+
+
+   <!-- grid nesting example -->
+      <div id="ascores" class="container">
+        <div class="columns">
+          <div class="column col-12 docs-note s-title">  
+            <h3 class="s-title"><a href="#ascores" class="anchor" aria-hidden="true">05.</a>As cores</h3>
+          </div>
+          <div class="column col-12"> 
+            <p class="description">Existe uma <strong>grelha de cores</strong> preparada para trabalhar de forma prática e inteligente. As cores estão esquematizadas com as informações básicas para que uma equipa de desenvolvimento web, de forma rápida e eficiente, possa implementar os estilos definidos. O objetivo é ganhar tempo e garantir que os projetos web da Fundação para a Ciência e a Tecnologia tragam consistência visual.</p>
+          </div>
+       
+          <div class="column col-12">
+            <h5 class="description">O esquema e as paletas da cor</h5>
+            <p class="description">Para a grelha principal, primária e secundária, temos a predominância da cor branca e um esquema de cores neutro com cinzas claros e escuros, alguma gama de tons de azul e tons de verde (a cor base da marca institucional).</p>
+            </p>
+          </div>
+
+
+        <div class="column col-12 ">
+        <p><small class="label">PALETA PRINCIPAL; PRIMÁRIA E SECUNDÁRIA</small></p>
+        </div>
+
+           <div class="column col-3 col-md-6">
+            <div class="docs-color" style="background:#454d5d;color:#fff;">
+              <div class="color-title">#454d5d</div>rgba(70, 77, 92, 1)
+              <div class="color-subtitle">Dark</div>
+            </div>
+          </div>
+
+          <div class="column col-3 col-md-6">
+            <div class="docs-color" style="background:#727e96;color:#fff;">
+              <div class="color-title">#727e96</div>rgba(115, 126, 148, 1)
+              <div class="color-subtitle">Gray dark</div>
+            </div>
+          </div>
+
+          <div class="column col-3 col-md-6">
+            <div class="docs-color" style="background:#acb3c2;color:#fff;">
+              <div class="color-title">#acb3c2</div>rgba(173, 179, 193, 1)
+              <div class="color-subtitle">Gray</div>
+            </div>
+          </div>
+
+          <div class="column col-3 col-md-6">
+            <div class="docs-color" style="background:#e7e9ed;color:#727e96;">
+              <div class="color-title">#e7e9ed</div>rgba(231, 233, 237, 1)
+              <div class="color-subtitle">Gray light</div>
+            </div>
+          </div>
+
+          <div class="column col-3 col-md-6">
+            <div class="docs-color" style="background:#f0f1f4;color:#727e96;">
+              <div class="color-title">#f0f1f4</div>rgba(240, 241, 244, 1)
+              <div class="color-subtitle">Border</div>
+            </div>
+          </div>
+
+          <div class="column col-3 col-md-6">
+            <div class="docs-color" style="background:#F7F7F7;color:#727e96;">
+              <div class="color-title">#F7F7F7</div>rgba(247, 247, 247, 1)
+              <div class="color-subtitle">Paineis</div>
+            </div>
+          </div>
+
+          <div class="column col-3 col-md-6">
+            <div class="docs-color" style="background:#fff;color:#727e96;">
+              <div class="color-title">#fff</div>rgba(255, 255, 255, 1)
+              <div class="color-subtitle">Light</div>
+            </div>
+          </div>
+
+          <div class="column col-3 col-md-6">  
+            <div class="">
+             
+            </div>
+          </div>
+
+            
+           <div class="column col-3 col-md-6">  
+            <div class="docs-color" style="background:#5FBA5F;color:#fff;">
+              <div class="color-title">#5FBA5F</div>rgba(100, 186, 102, 1)
+              <div class="color-subtitle">Green light</div>
+            </div>
+          </div>
+
+         <div class="column col-3 col-md-6">  
+            <div class="docs-color" style="background:rgba(23, 133, 64, 1);color:#fff;">
+              <div class="color-title">#258445</div>rgba(37, 132, 69, 1)
+              <div class="color-subtitle">Green dark</div>
+            </div>
+          </div> 
+
+          <div class="column col-3 col-md-6">  
+            <div class="docs-color" style="background:#6E9EBD;color:#fff;">
+              <div class="color-title">#6E9EBD</div>rgba(113, 158, 187, 1)
+              <div class="color-subtitle">Blue light</div>
+            </div>
+          </div>
+
+          <div class="column col-3 col-md-6">  
+            <div class="docs-color" style="background:#395262;color:#fff;">
+              <div class="color-title">#395262</div>rgba(59, 82, 97, 1)
+              <div class="color-subtitle">Blue dark</div>
+            </div>
+          </div> 
+
+      
+
+        <div class="column col-12 ">
+        <p><small class="label">OS ALERTAS</small></p>
+        </div>
+
+          <div class="column col-3 col-md-6">
+            <div class="docs-color" style="background:rgba(89, 186, 87, 1);color:#fff;">
+              <div class="color-title">#E94E53</div>rgba(95, 186, 95, 1)
+              <div class="color-subtitle">SUCCESS</div>
+            </div>
+          </div>
+
+          <div class="column col-3 col-md-6">
+            <div class="docs-color" style="background:rgba(252, 205, 99, 1);color:#fff;">
+              <div class="color-title">#FCCD63</div>rgba(249, 204, 110, 1)
+              <div class="color-subtitle">Warning</div>
+            </div>
+          </div>
+
+          <div class="column col-3 col-md-6">
+            <div class="docs-color" style="background:rgba(233, 78, 83, 1);color:#fff;">
+              <div class="color-title">#E85600</div>rgba(228, 77, 86, 1)
+              <div class="color-subtitle">Error</div>
+            </div>
+          </div>
+
+          <div class="column col-3 col-md-6">
+            <div class="docs-color" style="background:rgba(207, 215, 222, 1);color:#727e96;">
+              <div class="color-title">#0C8EFF</div>rgba(208, 215, 222, 1)
+              <div class="color-subtitle">Info</div>
+            </div>
+          </div>
+        
+
+        <div class="column col-12 ">
+        <p><small class="label">O LINK</small></p>
+        </div>
+
+          <div class="column col-3 col-md-6">
+            <div class="docs-color" style="background: rgba(64, 159, 255, .8);color:#fff;">
+              <div class="color-title">#70B3FB</div>rgba(64, 159, 255, .8)
+              <div class="color-subtitle">active</div>
+            </div>
+          </div>
+
+          <div class="column col-3 col-md-6">
+            <div class="docs-color" style="background: rgba(34, 117, 224, .9);color:#fff;">
+              <div class="color-title">#4683DE</div>rgba(34, 117, 224, .9)
+              <div class="color-subtitle">hover</div>
+            </div>
+          </div>
+
+          <div class="column col-3 col-md-6">
+            <div class="docs-color" style="background:rgba(34, 117, 224, .2);color:#727e96;">
+              <div class="color-title">#D6E3F8</div>rgba(34, 117, 224, .2)
+              <div class="color-subtitle">visited</div>
+            </div>
+          </div>
+
+
+          <div class="column col-3 col-md-6">  
+            <div class="">
+             
+            </div>
+          </div>
+
+
+
+        <div class="column col-12">
+        <p><small class="label">OS FUNDOS / SECÇÕES / RODAPÉS</small></p>
+        </div>
+
+        <div class="column col-6 col-md-6">
+            <div class="docs-color" style="background: rgba(68, 68, 68, 1);color:#fff;">
+              <div class="color-title">#444</div>rgba(68, 68, 68, 1)
+              <div class="color-subtitle">BG_Dark</div>
+            </div>
+          </div>
+          <div class="column col-6 col-md-6">
+            <div class="docs-color" style="background: rgba(241, 245, 248, 1);color:#727e96;">
+              <div class="color-title">#F1F5F8</div>rgba(241, 245, 248, 1)
+              <div class="color-subtitle">BG_GRAY/BLUELIGHT</div>
+            </div>
+          </div>
+          <div class="column col-6 col-md-6">
+            <div class="docs-color" style="background: rgba(250, 250, 250, 1);color:#727e96;">
+              <div class="color-title">#FAFAFA</div>rgba(250, 250, 250, 1)
+              <div class="color-subtitle">BG_GRAY LIGHT</div>
+            </div>
+          </div>
+          <div class="column col-6 col-md-6">
+            <div class="docs-color" style="background: #FFF;color:#727e96;">
+              <div class="color-title">#FFF</div>rgba(255, 255, 255, 1)
+              <div class="color-subtitle">BG_WHITE</div>
+            </div>
+          </div>
+
+          <div class="column col-12">
+          <p class="description">Estamos também empenhados em cumprir os índices de <a href="#">contraste das cores padrão AA</a>. Para isso, estamos a pensar apresentar (futuramente) uma área preparada para apresentar um esquema onde falaremos do contraste de cor suficiente entre elementos, para que os utilizadores com baixa visão possam utilizar da melhor forma os nossos interfaces.</p>
+          <!--p class="mais"><a href ="">Ver mais</a></p-->
+          </div>
+
+        </div>
+      </div>
+
+
+<!-- grid nesting example -->
+<div id="iconografia" class="container">     
+  <h3 class="s-title docs-note"><a href="#iconografia" class="anchor" aria-hidden="true">06.</a>A iconografia</h3>
+  <div class="columns"> 
+    <div class="column col-8 col-md-12"> 
+       <p class="description">A utilização dos ícones, enquanto símbolos, permitem facilitar e tornar mais rápido o reconhecimento visual das páginas web e de algumas áreas do interface.</p>
+       <p class="docs-note"></p>
+       <h5 class="description">Como utilizar</h5>
+       <p class="description">É conveniente que os pictogramas utilizados não sejam a única forma de identificar um determinado objeto de interação uma vez que apenas um pequeno conjunto de símbolos são reconhecidos universalmente. E por motivos de coerência visual, a FCT, também comunica com a iconografia personalizada dos componentes e elementos web das páginas e aplicações.</p>
+       <p class="description"><a href="solucoesUI.html#icones">Ver a coleção para os ícones</a>.</p> 
+    </div>  
+    <div class="column col-4 col-md-12">
+        <img src="img/00_ilustra_icones_estilos.svg" class="img-responsive rounded" alt="">
+    </div>
+  </div>  
+</div>
+
+
+
+      <footer class="section section-footer">
+      <p>Guia dos estilos para a web<br>
+      <a href="http://www.fct.pt/" target="_blank">Fundação para a Ciência e a Tecnologia</a>, <a href="" target="_blank">direitos reservados &copy; 2018</a>.</p>
+
+      <!-- BACK TO TOP -->
+      <a href="#content" title="póò do caralhão"><span id="to_top_scrollup"><i class="icone-harmonio_subir"></i></span></a>
+      </footer>
+
+    </div>
+  </div>
+
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-2702768-8', 'auto');
+      ga('send', 'pageview');
+  </script>
+</body>
+</html>
